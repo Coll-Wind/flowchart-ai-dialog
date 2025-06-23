@@ -1,0 +1,12 @@
+.flow-container {
+    flex: 1;
+    height: 100%;
+  }
+  
+  .flow-container.empty {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    font-size: 1.2rem;
+  }

@@ -1,0 +1,18 @@
+.app-shell {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+  
+  .app-header {
+    background-color: #1a365d;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+  }
+  
+  .app-content {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+  }
