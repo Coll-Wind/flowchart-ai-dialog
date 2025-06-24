@@ -25,7 +25,7 @@ async function createWindow() {
 
   const loadPath = isDev 
     ? 'http://localhost:3000' 
-    : path.join(__dirname, '../renderer/index.html');
+    : path.join(__dirname, '../src/renderer/index.html');
      console.log('📂 加载路径:', loadPath);
 
   await mainWindow.loadURL(loadPath);

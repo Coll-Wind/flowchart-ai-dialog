@@ -48,7 +48,7 @@ function createWindow() {
         });
         const loadPath = isDev
             ? 'http://localhost:3000'
-            : path_1.default.join(__dirname, '../renderer/index.html');
+            : path_1.default.join(__dirname, '../src/renderer/index.html');
         console.log('📂 加载路径:', loadPath);
         yield mainWindow.loadURL(loadPath);
         if (isDev) {

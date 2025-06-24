@@ -3,9 +3,9 @@ import AppShell from './components/AppShell';
 
 const App: React.FC = () => {
   return (
-    <div className="app">
-      <AppShell />
-    </div>
+   <div className="App">
+    <AppShell />
+   </div>
   );
 };
 
