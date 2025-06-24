@@ -27,19 +27,23 @@ const SessionList: React.FC = () => {
             onChange={(e) => setNewSessionName(e.target.value)}
             placeholder="新会话名称"
           />
-          <button onClick={handleAddSession}>添加</button>
+          <button onClick={handleAddSession}>创建会话</button>
         </div>
       </div>
       <ul className="session-items">
-        {sessions.map((session) => (
-          <li
-            key={session.id}
-            className={session.id === currentSessionId ? 'active' : ''}
-            onClick={() => setCurrentSession(session.id)}
-          >
-            {session.name}
-          </li>
-        ))}
+        {sessions.length === 0 ? (
+          <li>暂无会话</li>
+        ) : (
+          sessions.map((session) => (
+            <li
+              key={session.id}
+              className={session.id === currentSessionId ? 'active' : ''}
+              onClick={() => setCurrentSession(session.id)}
+            >
+              {session.name}
+            </li>
+          ))
+        )}
       </ul>
     </div>
   );
